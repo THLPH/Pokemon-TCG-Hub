@@ -1,0 +1,94 @@
+/* 1. VISUAL SYSTEM (Pokémon Theme) */
+:root {
+    --primary-bg: #f4f4f4;     /* Light gray background */
+    --surface-bg: #ffffff;     /* White containers */
+    --text-main: #333333;      /* Dark gray text */
+    --text-muted: #666666;
+    --accent-red: #ee1515;     /* Pokémon Red */
+    --accent-dark: #222224;    /* Dark Header/Footer */
+    --focus-outline: #3b4cca;  /* Pokémon Blue for accessibility focus */
+}
+
+/* 2. RESET & BASE */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--primary-bg);
+    color: var(--text-main);
+    line-height: 1.6;
+    display: flex; 
+    flex-direction: column; 
+    min-height: 100vh; 
+}
+
+/* 3. HEADER & NAVIGATION */
+header {
+    background-color: var(--accent-dark); 
+    padding: 1.5rem;
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center;
+    flex-wrap: wrap; 
+    border-bottom: 4px solid var(--accent-red);
+}
+header h1 { color: #ffffff; }
+nav ul { list-style: none; display: flex; gap: 1.5rem; }
+nav a { color: #cccccc; text-decoration: none; font-weight: bold; transition: color 0.2s ease; }
+nav a:hover, nav a.active { color: var(--accent-red); }
+a:focus-visible, .btn:focus-visible {
+    outline: 3px solid var(--focus-outline); outline-offset: 4px;
+}
+
+/* 4. HERO SECTION */
+main { 
+    flex: 1; 
+    padding: 2rem; 
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center;
+}
+.hero { 
+    text-align: center; 
+    max-width: 600px; 
+    background-color: var(--surface-bg); 
+    padding: 3rem; 
+    border-radius: 12px; 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); 
+    border: 2px solid #e0e0e0;
+}
+.hero h2 { color: var(--accent-red); margin-bottom: 1rem; font-size: 2.2rem; }
+.hero p { margin-bottom: 2rem; color: var(--text-muted); font-size: 1.1rem; }
+
+/* 5. BUTTONS */
+.btn {
+    display: inline-block; 
+    background-color: var(--accent-red); 
+    color: #ffffff;
+    padding: 0.75rem 1.5rem; 
+    text-decoration: none; 
+    border-radius: 25px; 
+    font-weight: bold;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+    border: 2px solid transparent;
+}
+.btn:hover { 
+    background-color: #cc0000; 
+    transform: translateY(-2px); 
+}
+
+/* 6. FOOTER */
+footer { 
+    text-align: center; 
+    padding: 1.5rem; 
+    background-color: var(--accent-dark); 
+    color: #cccccc; 
+    margin-top: auto; 
+    font-size: 0.9rem;
+}
+
+/* 7. RESPONSIVENESS */
+@media (max-width: 600px) { 
+    header { flex-direction: column; text-align: center; gap: 1rem; } 
+    nav ul { flex-wrap: wrap; justify-content: center; } 
+}
