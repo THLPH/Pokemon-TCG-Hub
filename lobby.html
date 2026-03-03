@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Pokémon TCG Hub - Lobby</title>
+</head>
+
+<body>
+    <header>
+        <h1>Pokémon TCG Hub</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="lobby.html" class="active">Game Lobby</a></li>
+                <li><a href="table.html">Deck Table</a></li>
+                <li><a href="rules.html">Rules & Strategy</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="safety-section">
+            <input type="checkbox" id="safety-toggle" class="hidden-toggle">
+            <label for="safety-toggle" class="btn-toggle-label" tabindex="0">View Fair Play Notice</label>
+            <div class="safety-content">
+                <h3>Fair Play & AI Ethics</h3>
+                <p>This community strictly prohibits the use of AI tools to manipulate card draws or automate matchmaking. Play fair, respect your opponents, and have fun!</p> 
+            </div>
+        </section>
+
+        <section class="lobby-grid">
+            <article class="lobby-room">
+                <h3>Room #001 (Standard)</h3>
+                <p>Status: Waiting for Opponent...</p>
+            </article>
+            <article class="lobby-room">
+                <h3>Room #002 (Expanded)</h3>
+                <p>Status: Match in Progress</p>
+            </article>
+            <article class="lobby-room">
+                <h3>Room #003 (Standard)</h3>
+                <p>Status: Waiting for Opponent...</p>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>&copy;2026 Pokémon TCG Hub. CSC 6370 Project 1.</p>
+    </footer>
+</body>
+</html>

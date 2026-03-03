@@ -92,3 +92,81 @@ footer {
     header { flex-direction: column; text-align: center; gap: 1rem; } 
     nav ul { flex-wrap: wrap; justify-content: center; } 
 }
+
+/* 8. Game lobby */
+.lobby-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+    width: 100%;
+    max-width: 900px;
+    margin-top: 1rem;
+}
+
+.lobby-room {
+    background-color: var(--surface-bg);
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 1.5rem;
+    width: 250px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s ease, border-color 0.2s ease;
+}
+.lobby-room:hover {
+    transform: translateY(-5px);
+    border-color: var(--accent-red);
+}
+.lobby-room h3 {
+    color: var(--accent-red);
+    margin-bottom: 0.5rem;
+}
+
+/* 9. safety notice */
+.safety-section {
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+.hidden.toggle {
+    display: none;
+}
+.safety-label{
+    cursor: pointer;
+    background-color: #ffcb05; /* Pokémon Yellow */
+    color: #333333;
+    border-color: #c7a008;
+}
+
+.safety-label:hover {
+    background-color: #e5b704;
+}
+
+.safety-content {
+    display: none;
+    background-color: #fffdf5;
+    border-left: 5px solid #ffcb05;
+    border-radius: 0 8px 8px 0;
+    padding: 1.5rem;
+    margin-top: 1.5rem;
+    text-align: left;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.safety-content h3 {
+    color: #b38f00;
+    margin-bottom: 0.5rem;
+}
+
+/* when invisible checkbox is checked, show content */
+#safety-toggle:checked ~ .safety-content {
+    display: block;
+    animation: slide-down 0.3s ease-in-out;
+}
+
+@keyframes slide-down {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
