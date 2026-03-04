@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokémon TCG Hub</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Pokémon TCG Hub</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="lobby.html">Games Lobby</a></li>
+                <li><a href="table.html" class="active">Deck Table</a></li>
+                <li><a href="rules.html">Rules and Strategy</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="deck-table">
+            <div class="zone active-zone">
+                <h3 class="zone-title">Active Pokémon</h3>
+                <div class="card-container" tabindex="0">
+                    <div class="card-inner">
+                        <div class="card-front">Charizard<br>HP: 150</div>
+                        <div class="card-back">Pokémon TCG</div>
+                    </div>
+                </div>
+            </div>
+            <div class="zone bench-zone">
+                <h3 class="zone-title">Bench Pokémon</h3>
+                <div class="card-container" tabindex="0">
+                    <div class="card-inner">
+                        <div class="card-front">Pikachu<br>HP: 60</div>
+                        <div class="card-back">Pokémon TCG</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2026 Pokémon TCG Hub. CSC 6370 Project 1.</p>
+    </footer>
+</body>
+</html>
