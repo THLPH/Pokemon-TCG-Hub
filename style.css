@@ -93,7 +93,7 @@ footer {
     nav ul { flex-wrap: wrap; justify-content: center; } 
 }
 
-/* 8. Game lobby */
+/* 8. GAME LOBBY */
 .lobby-grid {
     display: flex;
     flex-wrap: wrap;
@@ -114,6 +114,7 @@ footer {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
     transition: transform 0.2s ease, border-color 0.2s ease;
 }
+
 .lobby-room:hover {
     transform: translateY(-5px);
     border-color: var(--accent-red);
@@ -123,27 +124,48 @@ footer {
     margin-bottom: 0.5rem;
 }
 
-/* 9. safety notice */
+/* 9. SAFETY NOTICE */
 .safety-section {
     width: 100%;
     max-width: 600px;
     text-align: center;
     margin-bottom: 2rem;
 }
-.hidden.toggle {
+
+/* Hide the actual checkbox */
+.hidden-toggle {
     display: none;
 }
-.safety-label{
-    cursor: pointer;
+
+/* Style the Label to look like a Yellow Pokémon Button */
+.btn-toggle-label {
+    display: inline-block;
     background-color: #ffcb05; /* Pokémon Yellow */
     color: #333333;
-    border-color: #c7a008;
+    padding: 0.75rem 1.5rem;
+    border-radius: 25px;
+    font-weight: bold;
+    cursor: pointer;
+    border: 2px solid #c7a008;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+    user-select: none;
 }
 
-.safety-label:hover {
+.btn-toggle-label:hover {
     background-color: #e5b704;
 }
 
+.btn-toggle-label:active {
+    transform: translateY(1px);
+}
+
+/* Accessibility: Show focus outline when tabbing */
+.btn-toggle-label:focus-visible {
+    outline: 3px solid var(--focus-outline);
+    outline-offset: 4px;
+}
+
+/* The hidden content box */
 .safety-content {
     display: none;
     background-color: #fffdf5;
@@ -155,12 +177,7 @@ footer {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.safety-content h3 {
-    color: #b38f00;
-    margin-bottom: 0.5rem;
-}
-
-/* when invisible checkbox is checked, show content */
+/* When checkbox is checked, show the content */
 #safety-toggle:checked ~ .safety-content {
     display: block;
     animation: slide-down 0.3s ease-in-out;
@@ -171,7 +188,7 @@ footer {
     to { opacity: 1; transform: translateY(0); }
 }
 
-/* 10. DECK TABLE (CSS Grid Layout) */
+/* 10. DECK TABLE */
 .deck-table {
     display: grid;
     grid-template-rows: auto auto; /* Two distinct rows: Active and Bench */
@@ -189,14 +206,17 @@ footer {
     justify-content: center;
     flex-wrap: wrap;
 }
+
 .active-zone {
     border-color: var(--accent-red);
     background-color: #fffafa; /* Very faint red tint */
 }
+
 .bench-zone {
     border-color: #3b4cca; /* Pokémon Blue */
     background-color: #f4f6ff; /* Very faint blue tint */
 }
+
 .zone-title {
     width: 100%;
     text-align: center;
@@ -207,13 +227,14 @@ footer {
 }
 
 
-/* 11. 3D CARD ANIMATIONS (CSS-Only Flips) */
+/* 11. 3D CARD ANIMATIONS */
 .card-container {
     width: 160px;
     height: 224px;
     perspective: 1000px; /* Essential for the 3D depth effect */
     cursor: pointer;
 }
+
 .card-inner {
     width: 100%;
     height: 100%;
@@ -221,10 +242,12 @@ footer {
     transition: transform 0.6s ease-in-out;
     transform-style: preserve-3d;
 }
+
 .card-container:hover .card-inner, 
 .card-container:focus-visible .card-inner {
     transform: rotateY(180deg);
 }
+
 .card-front, .card-back {
     width: 100%;
     height: 100%;
@@ -242,10 +265,12 @@ footer {
     box-shadow: 0 4px 8px rgba(0,0,0,0.2);
     border: 4px solid #ffcb05; /* Pokémon Yellow border */
 }
+
 .card-front {
     background-color: #ffffff;
     color: var(--text-main);
 }
+
 .card-back {
     background-color: #3b4cca; /* Pokémon Blue */
     color: #ffffff;
@@ -254,6 +279,7 @@ footer {
 }
 
 /* 12. RULES PAGE CONTENT */
+
 .rules-content {
     width: 100%;
     max-width: 800px;
@@ -262,16 +288,19 @@ footer {
     border-radius: 12px;
     box-shadow: 0 4px 12px rgba(0,0,0,0.05);
 }
+
 .rules-content h2 {
     color: var(--accent-red);
     margin-bottom: 1.5rem;
     border-bottom: 2px solid #f0f0f0;
     padding-bottom: 0.5rem;
 }
+
 .rules-content ol {
     margin-left: 2rem;
     margin-bottom: 2rem;
 }
+
 .rules-content li {
     margin-bottom: 0.8rem;
 }
@@ -290,6 +319,7 @@ footer {
     justify-content: center;
     margin-top: 2rem;
 }
+
 .compare-card {
     background-color: #f9f9f9;
     border: 2px solid #dddddd;
@@ -301,20 +331,24 @@ footer {
 .compare-card:hover {
     transform: translateY(-3px);
 }
+
 .compare-card h3 {
     color: var(--text-main);
     margin-bottom: 1rem;
     text-align: center;
 }
+
 .compare-card p {
     margin-bottom: 0.5rem;
     font-size: 0.95rem;
 }
+
 .evolved-tier {
     border-color: var(--accent-red);
     background-color: #fffafa;
     box-shadow: 0 4px 12px rgba(238, 21, 21, 0.15);
 }
+
 .evolved-tier h3 {
     color: var(--accent-red);
 }
