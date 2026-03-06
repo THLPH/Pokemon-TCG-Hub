@@ -24,13 +24,24 @@ body {
 /* 3. HEADER & NAVIGATION */
 header {
     background-color: var(--accent-dark); 
-    padding: 1.5rem;
+    padding: 1rem 2rem;
     display: flex; 
     justify-content: space-between; 
     align-items: center;
     flex-wrap: wrap; 
     border-bottom: 4px solid var(--accent-red);
 }
+.header-logo-container {
+    display: flex;
+    align-items: center;
+    gap: 1rem; /* Space between Pokéball and Title */
+}
+
+.header-logo {
+    height: 50px; /* Adjust size to fit header height */
+    width: auto;
+}
+
 header h1 { color: #ffffff; }
 nav ul { list-style: none; display: flex; gap: 1.5rem; }
 nav a { color: #cccccc; text-decoration: none; font-weight: bold; transition: color 0.2s ease; }
@@ -137,10 +148,10 @@ footer {
     display: none;
 }
 
-/* Style the Label to look like a Yellow Pokémon Button */
+/* Style the Label to look like a Yellow Pokémon Button - #ffcb05 */
 .btn-toggle-label {
     display: inline-block;
-    background-color: #ffcb05; /* Pokémon Yellow */
+    background-color: #ffcb05;
     color: #333333;
     padding: 0.75rem 1.5rem;
     border-radius: 25px;
@@ -191,7 +202,7 @@ footer {
 /* 10. DECK TABLE */
 .deck-table {
     display: grid;
-    grid-template-rows: auto auto; /* Two distinct rows: Active and Bench */
+    grid-template-rows: auto auto;
     gap: 2rem;
     width: 100%;
     max-width: 900px;
@@ -209,12 +220,12 @@ footer {
 
 .active-zone {
     border-color: var(--accent-red);
-    background-color: #fffafa; /* Very faint red tint */
+    background-color: #fffafa;
 }
 
 .bench-zone {
-    border-color: #3b4cca; /* Pokémon Blue */
-    background-color: #f4f6ff; /* Very faint blue tint */
+    border-color: #3b4cca;
+    background-color: #f4f6ff; 
 }
 
 .zone-title {
@@ -231,7 +242,7 @@ footer {
 .card-container {
     width: 160px;
     height: 224px;
-    perspective: 1000px; /* Essential for the 3D depth effect */
+    perspective: 1000px; /* 3D depth effect */
     cursor: pointer;
 }
 
@@ -252,18 +263,20 @@ footer {
     width: 100%;
     height: 100%;
     position: absolute;
+    background-color: #ffffff;
     top: 0;
     left: 0;
-    backface-visibility: hidden; /* Hides the back of the element when flipped */
+    backface-visibility: hidden; /* hide back of card when flipped */
     border-radius: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
     font-weight: bold;
     text-align: center;
-    padding: 1rem;
+    padding: 0;
+    overflow: hidden;
     box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-    border: 4px solid #ffcb05; /* Pokémon Yellow border */
+    border: 4px solid #ffcb05;
 }
 
 .card-front {
@@ -272,10 +285,30 @@ footer {
 }
 
 .card-back {
-    background-color: #3b4cca; /* Pokémon Blue */
+    background-color: #3b4cca;
     color: #ffffff;
     transform: rotateY(180deg);
     background-image: radial-gradient(circle, #3b4cca, #2a3b9a);
+}
+
+.card-img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    display: block;
+}
+
+.card-info {
+position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.9);
+    color: var(--text-main);
+    padding: 8px 0;
+    font-size: 0.9rem;
+    text-align: center;
+    border-top: 2px solid #ffcb05;
+    z-index: 2;
 }
 
 /* 12. RULES PAGE CONTENT */
@@ -311,7 +344,7 @@ footer {
     margin: 3rem 0;
 }
 
-/* 13. BONUS 6: MODEL COMPARISON CARDS */
+/* 13. MODEL COMPARISON CARDS */
 .comparison-container {
     display: flex;
     flex-wrap: wrap;
@@ -353,7 +386,7 @@ footer {
     color: var(--accent-red);
 }
 
-/* 14. ACCESSIBILITY: REDUCED MOTION */
+/* 14. ACCESSIBILITY FEATURE */
 @media (prefers-reduced-motion: reduce) {
     .card-inner, .btn, .lobby-room, .compare-card { 
         transition: none; 
