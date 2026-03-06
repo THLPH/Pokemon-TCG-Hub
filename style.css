@@ -299,7 +299,7 @@ footer {
 }
 
 .card-info {
-position: absolute;
+    position: absolute;
     bottom: 0;
     width: 100%;
     background: rgba(255, 255, 255, 0.9);
@@ -312,7 +312,6 @@ position: absolute;
 }
 
 /* 12. RULES PAGE CONTENT */
-
 .rules-content {
     width: 100%;
     max-width: 800px;
@@ -337,6 +336,7 @@ position: absolute;
 .rules-content li {
     margin-bottom: 0.8rem;
 }
+
 .divider {
     border: 0;
     height: 2px;
@@ -361,6 +361,7 @@ position: absolute;
     width: 280px;
     transition: transform 0.2s ease;
 }
+
 .compare-card:hover {
     transform: translateY(-3px);
 }
