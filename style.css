@@ -148,7 +148,7 @@ footer {
     display: none;
 }
 
-/* Style the Label to look like a Yellow Pokémon Button */
+/* Style the Label to look like a Yellow Pokémon Button - #ffcb05 */
 .btn-toggle-label {
     display: inline-block;
     background-color: #ffcb05;
@@ -176,7 +176,7 @@ footer {
     outline-offset: 4px;
 }
 
-/* hidden content box */
+/* The hidden content box */
 .safety-content {
     display: none;
     background-color: #fffdf5;
@@ -188,7 +188,7 @@ footer {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* when checkbox is checked, show the content */
+/* When checkbox is checked, show the content */
 #safety-toggle:checked ~ .safety-content {
     display: block;
     animation: slide-down 0.3s ease-in-out;
@@ -199,7 +199,7 @@ footer {
     to { opacity: 1; transform: translateY(0); }
 }
 
-/* 10. deck table */
+/* 10. DECK TABLE */
 .deck-table {
     display: grid;
     grid-template-rows: auto auto;
@@ -238,7 +238,7 @@ footer {
 }
 
 
-/* 11. 3d animations */
+/* 11. 3D CARD ANIMATIONS */
 .card-container {
     width: 160px;
     height: 224px;
@@ -311,7 +311,7 @@ position: absolute;
     z-index: 2;
 }
 
-/* 12. content for the rules page */
+/* 12. RULES PAGE CONTENT */
 
 .rules-content {
     width: 100%;
@@ -344,7 +344,7 @@ position: absolute;
     margin: 3rem 0;
 }
 
-/* 13. model comparison cards */
+/* 13. MODEL COMPARISON CARDS */
 .comparison-container {
     display: flex;
     flex-wrap: wrap;
@@ -386,7 +386,7 @@ position: absolute;
     color: var(--accent-red);
 }
 
-/* 14. reduced motion for accessibility */
+/* 14. ACCESSIBILITY FEATURE */
 @media (prefers-reduced-motion: reduce) {
     .card-inner, .btn, .lobby-room, .compare-card { 
         transition: none; 

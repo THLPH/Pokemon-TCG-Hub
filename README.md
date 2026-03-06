@@ -1,48 +1,49 @@
-Pokémon TCG Hub
+🎴 Pokémon TCG Hub
 
-Welcome to the Pokémon TCG Hub, a digital companion designed for players of the Pokémon Trading Card Game. This project provides a centralized, high-performance web interface for players to explore the game's structure, simulate board setups, and compare card statistics in a responsive environment.
-🚀 Overview
+Welcome to the Pokémon TCG Hub, a lightweight, responsive web application built to help players visualize their board and master the basics of the game. This project was designed to prove that you can create a tactile, interactive experience using HTML and CSS.
+🚀 The Tour
+🏟️ The Deck Table
 
-The Pokémon TCG Hub is built to offer a tactile, digital experience that mimics physical card play. By prioritizing modern CSS techniques, the hub provides smooth, 3D interactions and a clear visual hierarchy that helps both new and veteran players manage their game flow.
-✨ Key Features
-1. Interactive Deck Table
+The heart of the app. It uses CSS Grid to create a structured "Arena" where you can manage your Active Pokémon and your Bench.
 
-The heart of the hub is the Deck Table, which uses a structured grid system to simulate the Active Pokémon and Bench zones.
+    3D Card Flips: Hover over (or tap) any card to see it flip in 3D space.
 
-    3D Card Flips: Interact with cards using CSS-only 3D transformations. Flip prize cards or face-down deck cards with a smooth, realistic motion.
+    Tactile Zones: Distinct visual areas for the Active spot and the Bench, styled with Pokémon-themed accents.
 
-    Tactile Feedback: Hover and focus states provide immediate visual feedback, scaling cards for better readability.
+🤝 Game Lobby
 
-2. Strategic Game Lobby
+A simulated matchmaking environment.
 
-A simulated environment for organizing matches.
+    Status Tracking: Check which rooms are open or currently in a match.
 
-    Matchmaking Grid: View available rooms and player statuses in a clean, flex-based layout.
+    The "Checkbox Hack": A CSS-only interactive "Fair Play Notice." It uses a hidden checkbox and the sibling selector (~) to toggle content visibility without a single line of script.
 
-    Safety & Fair Play System: A built-in, CSS-only notification system that ensures all players are aware of community guidelines and AI ethics regarding fair play.
+📜 Rules & Strategy
 
-3. Rules & Strategy Guide
+A quick-reference guide for the heat of battle.
 
-A comprehensive resource for mastering the game.
+    Turn Phases: A clean breakdown of Draw, Attach, Play, and Attack phases.
 
-    Model Comparison Cards: A specialized side-by-side comparison tool to evaluate the stat differences between Basic, Stage 1, and Stage 2 Pokémon.
+    Stat Comparison: A side-by-side look at how stats scale from a Basic Pokémon (Charmander) to a Stage 2 Evolution (Charizard).
 
-    Semantic Documentation: Clear, accessible breakdown of game phases (Draw, Attach, Attack).
+🛠️ Behind the Scenes (The Tech)
 
-4. Accessibility & Performance
+    Layout Engine: Powered by CSS Grid for the complex table layout and Flexbox for the responsive navigation and lobby.
 
-    Zero JavaScript: All interactions, toggles, and animations are driven 100% by HTML and CSS, ensuring lightning-fast load times and security.
+    Animations: Custom @keyframes and perspective transforms create smooth 3D motion.
 
-    Full Responsiveness: The hub adapts seamlessly from large desktop monitors to mobile devices.
+    Accessibility First: * Focus States: High-visibility blue outlines for keyboard navigation.
 
-    Inclusive Design: High-contrast focus rings and reduced-motion support make the hub accessible to all players.
+        Reduced Motion: A dedicated media query that disables 3D flips for users who prefer less movement.
 
-🛠️ Technical Highlights
+    Themed Styling: A centralized system of CSS variables ensures the "Pokémon Red" and "Pokémon Blue" aesthetic is consistent across every page.
 
-    Layout: CSS Grid (Deck Table) and Flexbox (Navigation & Lobby).
+🏃 How to Run
 
-    Animations: CSS 3D transforms (rotateY) and @keyframes.
+    Clone the repository.
 
-    Interactions: The "Checkbox Hack" for state management without scripts.
+    Open index.html in any modern web browser.
 
-    Design System: A custom-built CSS variable system for consistent Pokémon-themed branding.
+    Enjoy the 3D cards!
+
+CSC 6370 - Project 1 (Spring 2026)
