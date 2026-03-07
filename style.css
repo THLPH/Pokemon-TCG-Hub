@@ -1,4 +1,4 @@
-/* 1. VISUAL SYSTEM (Pokémon Theme) */
+/* 1. The Pokemon Visual Theme */
 :root {
    --primary-bg: #f4f4f4;
    /* Light gray background */
@@ -15,7 +15,7 @@
    /* Pokémon Blue for accessibility focus */
 }
 
-/* 2. RESET & BASE */
+/* 2. Reset and Base */
 * {
    margin: 0;
    padding: 0;
@@ -23,13 +23,19 @@
 }
 
 body {
-   font-family: Arial, sans-serif;
+   font-family: "Trebuchet MS", "Lucida Grande", Arial, sans-serif;
    background-color: var(--primary-bg);
    color: var(--text-main);
    line-height: 1.6;
    display: flex;
    flex-direction: column;
    min-height: 100vh;
+}
+
+h1, h2, h3 {
+   font-family: "Verdana", Tahoma, sans-serif;
+   letter-spacing: 0.5px;
+   font-weight: bold;
 }
 
 .home-page {
@@ -84,7 +90,7 @@ nav a:hover,
 nav a.active {
    color: var(--accent-red);
 }
-
+/* accessibility feature to make sure tab focus is super visible */
 a:focus-visible,
 .btn:focus-visible {
    outline: 3px solid var(--focus-outline);
@@ -165,7 +171,7 @@ footer {
    }
 }
 
-/* 8. GAME LOBBY */
+/* 8. Game Lobby: Using a flexbox grid for the rooms so they wrap cleanly on mobile, aiming for a hover snap */
 .lobby-grid {
    display: flex;
    flex-wrap: wrap;
@@ -197,7 +203,7 @@ footer {
    margin-bottom: 0.5rem;
 }
 
-/* 9. SAFETY NOTICE FOR BONUS 5 */
+/* 9. safety notice bonus: the invisible checkbox took time to perfect */
 .safety-section {
    width: 100%;
    max-width: 600px;
@@ -290,7 +296,7 @@ footer {
    }
 }
 
-/* 10. DECK TABLE */
+/* 10. Deck Table: Switched to a grid for the arena so the active and bench areas stay locked exactly where they should */
 .deck-table {
    display: grid;
    grid-template-rows: auto auto;
@@ -329,7 +335,7 @@ footer {
    letter-spacing: 2px;
 }
 
-/* 11. 3D CARD ANIMATIONS FOR BONUS 6 */
+/* 11. 3D Card Animations Bonus: here we were fixing the 3D perspective to stop the back face from showing through on flips. */
 .card-container {
    width: 160px;
    height: 224px;
@@ -405,7 +411,7 @@ footer {
     backface-visibility: hidden;
     -webkit-backface-visibility: hidden;
     transform: translateZ(1px); /* Stops it from poking through the back */
-}}
+}
 
 /* 12. RULES PAGE CONTENT */
 .rules-content {
@@ -486,7 +492,7 @@ footer {
    color: var(--accent-red);
 }
 
-/* 14. ACCESSIBILITY FEATURE */
+/* 14. Accessibility Feature turns off 3D flips and slide transitions for Reduced Motion users */
 @media (prefers-reduced-motion: reduce) {
 
    .card-inner,
