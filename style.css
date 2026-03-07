@@ -170,6 +170,20 @@ footer {
     transform: translateY(1px);
 }
 
+.risk-badge {
+    display: inline-block;
+    padding: 0.25rem 0.6rem;
+    font-size: 0.75rem;
+    border-radius: 12px;
+    color: #ffffff;
+    margin-left: 0.75rem;
+    vertical-align: middle;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.risk-high { background-color: var(--accent-red); }
+.risk-low { background-color: #4caf50; } /* Green */
+
 /* Accessibility: Show focus outline when tabbing */
 .btn-toggle-label:focus-visible {
     outline: 3px solid var(--focus-outline);
