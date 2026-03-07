@@ -325,29 +325,6 @@ footer {
     z-index: 2;
 }
 
-.compare-size {
-    width: 200px;
-    height: 280px;
-}
-
-/* Forces the original compare-card to fit the new 3D container width */
-.compare-size .compare-card {
-    width: 100%;
-    height: 100%;
-    margin: 0;
-    display: flex; 
-    flex-direction: column;
-    justify-content: center;
-    text-align: left;
-    padding: 0.5rem;
-    font-size: 0.85rem;
-}
-
-.compare-size .compare-card h3 {
-    text-align: center;
-    margin-bottom: 0.5rem;
-    width: 100%;
-}
 
 /* 12. RULES PAGE CONTENT */
 .rules-content {
@@ -382,7 +359,7 @@ footer {
     margin: 3rem 0;
 }
 
-/* 13. MODEL COMPARISON CARDS */
+/* 13. MODEL COMPARISON CARDS FOR BONUS 6 */
 .comparison-container {
     display: flex;
     flex-wrap: wrap;
@@ -391,43 +368,45 @@ footer {
     margin-top: 2rem;
 }
 
-.compare-card {
-    background-color: #f9f9f9;
-    border: 2px solid #dddddd;
-    border-radius: 12px;
-    padding: 1.5rem;
-    width: 280px;
-    transition: transform 0.2s ease;
+.compare-size {
+    width: 200px;
+    height: 280px;
 }
 
-.compare-card:hover {
-    transform: translateY(-3px);
+/* Formats the text inside the comparison cards */
+.compare-size .card-front {
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    padding: 1rem;
+    font-size: 0.8rem;
+    font-weight: normal; /* Overrides the bold text of standard table cards */
 }
 
-.compare-card h3 {
-    color: var(--text-main);
-    margin-bottom: 1rem;
+.compare-size .card-front h3 {
     text-align: center;
+    margin-bottom: 0.75rem;
+    font-weight: bold;
 }
 
-.compare-card p {
-    margin-bottom: 0.5rem;
-    font-size: 0.95rem;
+.compare-size .card-front p {
+    margin-bottom: 0.4rem;
+    width: 100%;
 }
 
-.evolved-tier {
+/* Red styling for Stage 2 */
+.card-front.evolved-tier {
     border-color: var(--accent-red);
     background-color: #fffafa;
-    box-shadow: 0 4px 12px rgba(238, 21, 21, 0.15);
 }
 
-.evolved-tier h3 {
+.card-front.evolved-tier h3 {
     color: var(--accent-red);
 }
 
 /* 14. ACCESSIBILITY FEATURE */
 @media (prefers-reduced-motion: reduce) {
-    .card-inner, .btn, .lobby-room, .compare-card { 
+    .card-inner, .btn, .lobby-room { 
         transition: none; 
     }
     .card-container:hover .card-inner, 
