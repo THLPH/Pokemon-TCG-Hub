@@ -252,7 +252,7 @@ footer {
 }
 
 
-/* 11. 3D CARD ANIMATIONS */
+/* 11. 3D CARD ANIMATIONS FOR BONUS 6 */
 .card-container {
     width: 160px;
     height: 224px;
@@ -323,6 +323,30 @@ footer {
     text-align: center;
     border-top: 2px solid #ffcb05;
     z-index: 2;
+}
+
+.compare-size {
+    width: 200px;
+    height: 280px;
+}
+
+/* Forces the original compare-card to fit the new 3D container width */
+.compare-size .compare-card {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    padding: 0.5rem;
+    font-size: 0.85rem;
+}
+
+.compare-size .compare-card h3 {
+    text-align: center;
+    margin-bottom: 0.5rem;
+    width: 100%;
 }
 
 /* 12. RULES PAGE CONTENT */
