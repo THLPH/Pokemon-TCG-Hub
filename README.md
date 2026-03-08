@@ -57,4 +57,11 @@ A quick-reference guide for the heat of battle.
 This project was developed for CSC 6370 (Spring 2026). In alignment with academic honesty and transparency, a full breakdown of AI usage for copywriting, 3D CSS logic, and boilerplate generation is documented.
 View the Full Disclosure: [⚖️ AI Disclosure](./AI_Disclosure.md)
 
+## 📓 Development Journal & Challenges
+Building a purely HTML/CSS project without JavaScript helped us get creative, especially with the interactive elements. 
+
+* **The Checkbox Hack:** Figuring out how to toggle the Fair Play Notice in the lobby was a fun challenge. I ended up relying on a hidden checkbox and the `~` sibling selector to trigger the state change.
+* **3D Card Flips:** Getting the `backface-visibility` to play nicely across different elements took some trial and error, specifically ensuring the text didn't bleed through the back of the card during the `rotateY(180deg)` transition. 
+* **Layout Choices:** I initially tried building the entire table using Flexbox, but quickly realized CSS Grid was vastly superior for creating the rigid, defined zones for the Active and Bench areas.
+
 CSC 6370 - Project 1 (Spring 2026)
