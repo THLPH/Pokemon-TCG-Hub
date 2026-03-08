@@ -8,46 +8,46 @@
 
 **Term:** Spring 2026
 
-This document outlines the extent to which Artificial Intelligence (AI) was utilized in the development of this project to ensure academic transparency. AI was used as a tool for copywriting, boilerplate generation, complex styling, and overall code review.
+This file explains how we used AI in the project. We mainly used it for quick help, creating basic boilerplate, fixing tricky CSS, and doing light code review to keep things clean.
 
 ## 1. Content and Copywriting
 
-AI was used to generate and refine the majority of the human-readable text across the application to ensure a professional and thematic tone.
+AI helped write and polish most of the readable text in the app, so everything sounded clean, consistent, and on‑theme.
 
-* **Site Copy:** AI drafted the introductory text on the Home page, including the "Welcome to the Arena" section.
+* **Site Copy:** AI helped draft the intro text on the Home page, including the “Welcome to the Arena” section, to help keep the wording clean and consistent.
 
-* **Team Documentation:** AI formatted the project descriptions, role breakdowns (e.g., Technical Duties, Quality Assurance).
+* **Team Documentation:** AI helped format the project descriptions and role sections, such as Technical Duties and QA, so everything looked clean and consistent.
 
-* **Game Rules:** AI summarized the step-by-step turn phases and the three win conditions.
+* **Game Rules:** AI gave us a quick summary of the turn‑by‑turn phases and the three win conditions so we could present them more clearly in the app.
 
-* **Lobby Notices:** AI generated the copy for the "Fair Play & AI Ethics" warning message.
+* **Lobby Notices:** AI helped create the copy for the "Fair Play & AI Ethics" warning message.
 
-* **Project Documentation:** AI assisted in writing the feature overviews, technology explanations, and the "How to Run" instructions.
+* **Project Documentation:** AI helped write the feature overviews, explain the tech choices, and put together the instructions so everything was clear and easy to follow.
 
 ## 2. Structural Layout
 
-AI assisted in building the foundational HTML document structure and the core CSS layout systems to save time on boilerplate code.
+AI helped set up the basic HTML structure and the main CSS layout systems, so we did not have to spend extra time repeating code.
 
-* **HTML Skeletons:** AI generated the consistent `<header>`, `<nav>`, `<main>`, and `<footer>` scaffolding used across all HTML pages.
+* **HTML Skeletons:** AI generated the consistent `<header>`, `<nav>`, `<main>`, and `<footer>` structure used across all the HTML pages to keep everything consistent.
 
-* **Layout Engines:** AI helped configure the CSS Grid architecture used to separate the Active Zone and Bench Zone on the game board.
+* **Layout Engines:** AI helped set up the CSS Grid layout that separates the Active Zone and Bench Zone on the game board, making it easier to keep the layout organized and consistent.
 
-* **Base Styling:** AI established the root CSS variables (like `--primary-bg` and `--accent-red`) and the global reset rules.
+* **Base Styling:** AI helped us to set up the root CSS variables (like `--primary-bg` and `--accent-red`) to keep styling consistent.
 
 ## 3. Complex CSS and Animations
 
-AI was leveraged to write the more advanced, math-heavy CSS properties required for 3D rendering and state-based interactive elements.
+AI helped us to fix the more advanced, heavy CSS needed for the 3D effects and the interactive, state‑based elements, making those parts easier to build and fine‑tune.
 
-* **3D Card Flips:** AI assisted in the 3D Card Flip animation logic. AI provided the CSS rules for the 3D depth effect (`perspective: 1000px`), the `preserve-3d` transform style, and the `180-degree` hover rotation.
+* **3D Card Flips:** AI helped with the 3D card‑flip animation by providing the CSS for the depth effect (`perspective: 1000px`), the `preserve-3d` transform setuo, and the `180-degree` hover rotation.
 
-* **Backface Rendering:** AI supplied the specific `-webkit-backface-visibility: hidden` vendor prefixes and `translateZ(1px)` adjustments to prevent the back of the card from clipping through the front during animations.
+* **Backface Rendering:** AI also helped us with the `-webkit-backface-visibility: hidden`  and small `translateZ(1px)` adjustments to stop the back of the card from being visible through the front during animations.
 
-* **The "Checkbox Hack":** AI wrote the CSS logic that ties the hidden `#safety-toggle` checkbox to the `.safety-content` visibility, along with the `@keyframes slide-down` animation.
+* **The "Checkbox Hack":** AI also helped us in learning how to write the CSS logic that links the hidden `#safety-toggle` checkbox to the `.safety-content` visibility, along with the `@keyframes slide-down` animation.
 
 ## 4. Code Review and Refinement
 
-AI served as a secondary reviewer to check the overall code quality, consistency, and adherence to modern web standards.
+AI also helped review the code for quality, consistency, and alignment with modern web standards.
 
-* **Accessibility:** AI assisted in implementing accessibility features, such as `:focus-visible` outlines for keyboard navigation and the `prefers-reduced-motion` media query to disable 3D flips for sensitive users.
+* **Accessibility:** AI helped add and code accessibility features like  `:focus-visible` outlines for keyboard navigation and the `prefers-reduced-motion` media query, which turns off 3D flips for users who are sensitive to motion.
 
-* **Responsive Design:** AI reviewed and refined the layout engines to ensure proper scaling on smaller screens, such as the flex-direction shift for the header.
+* **Responsive Design:** AI helped review and fix the layout setup to ensure it scales properly on smaller screens, such as the flex-direction movement for the header.
