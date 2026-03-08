@@ -1,7 +1,11 @@
-🎴 Pokémon TCG Hub
+# 🎴 Pokémon TCG Hub
 
 Welcome to the Pokémon TCG Hub, a lightweight, responsive web application built to help players visualize their board and master the basics of the game. This project was designed to prove that you can create a tactile, interactive experience using HTML and CSS.
-🚀 The Tour
+
+[🏃 Jump to Run Instructions](#-how-to-run) | [⚖️ Jump to AI Disclosure](#-project-integrity--ai-disclosure)
+
+# 📝 Pages Overview
+
 🏟️ The Deck Table
 
 The heart of the app. It uses CSS Grid to create a structured "Arena" where you can manage your Active Pokémon and your Bench.
@@ -34,10 +38,11 @@ A quick-reference guide for the heat of battle.
 
     Accessibility First: * Focus States: High-visibility blue outlines for keyboard navigation.
 
-        Reduced Motion: A dedicated media query that disables 3D flips for users who prefer less movement.
+    Reduced Motion: A dedicated media query that disables 3D flips for users who prefer less movement.
 
     Themed Styling: A centralized system of CSS variables ensures the "Pokémon Red" and "Pokémon Blue" aesthetic is consistent across every page.
 
+<a id="-how-to-run"></a>
 🏃 How to Run
 
     Clone the repository.
@@ -45,5 +50,11 @@ A quick-reference guide for the heat of battle.
     Open index.html in any modern web browser.
 
     Enjoy the 3D cards!
+
+<a id="-project-integrity--ai-disclosure"></a>
+⚖️ Project Integrity & AI Disclosure
+
+This project was developed for CSC 6370 (Spring 2026). In alignment with academic honesty and transparency, a full breakdown of AI usage for copywriting, 3D CSS logic, and boilerplate generation is documented.
+View the Full Disclosure: [⚖️ AI Disclosure](./AI_Disclosure.md)
 
 CSC 6370 - Project 1 (Spring 2026)
