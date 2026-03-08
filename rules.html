@@ -1,73 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
-   <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Rules | Pokémon TCG Hub</title>
-      <link rel="stylesheet" href="style.css">
-      <link rel="icon" type="image/svg+xml" href="media/pokeball.svg">
-   </head>
-   <body class="home-page">
-      <header>
-         <div class="header-logo-container">
-            <img src="media/pokemon-logo.png" alt="Pokémon Hub Logo" class="header-logo">
-         </div>
-         <h1>Pokémon TCG Hub</h1>
-         <nav>
-            <ul>
-               <li><a href="index.html">Home</a></li>
-               <li><a href="lobby.html">Game Lobby</a></li>
-               <li><a href="table.html">Deck Table</a></li>
-               <li><a href="rules.html" class="active">Rules & Strategy</a></li>
-            </ul>
-         </nav>
-      </header>
-      <main>
-         <section class="rules-content">
-            <h2>Turn Phases</h2>
-            <ol>
-               <li><strong>Draw:</strong> Pull one card from your deck at the start of your turn.</li>
-               <li><strong>Attach:</strong> You may attach exactly one Energy card to one of your Pokémon.</li>
-               <li><strong>Play:</strong> Put Basic Pokémon onto your Bench, play Trainer cards, or Evolve.</li>
-               <li><strong>Attack:</strong> Use one attack from your Active Pokémon, then your turn ends.</li>
-            </ol>
-            <hr class="divider">
-            <h2>Evolution Stat Comparison</h2>
-            <p>Compare the scaling stats between a Basic Pokémon and its Stage 2 Evolution.</p>
-            <div class="comparison-container">
-               <div class="card-container compare-size" tabindex="0">
-                  <div class="card-inner">
-                     <div class="card-front">
-                        <h3>Basic Pokémon</h3>
-                        <p><strong>Example:</strong> Charmander</p>
-                        <p><strong>HP:</strong> 50</p>
-                        <p><strong>Avg Attack:</strong> 10-20 Damage</p>
-                        <p><strong>Setup:</strong> Play directly to Bench.</p>
-                     </div>
-                     <div class="card-back">
-                        <img src="media/card-back.png" alt="Pokémon TCG Back" class="card-img">
-                     </div>
-                  </div>
-               </div>
-               <div class="card-container compare-size" tabindex="0">
-                  <div class="card-inner">
-                     <div class="card-front evolved-tier">
-                        <h3>Stage 2 Pokémon</h3>
-                        <p><strong>Example:</strong> Charizard</p>
-                        <p><strong>HP:</strong> 150+</p>
-                        <p><strong>Avg Attack:</strong> 100+ Damage</p>
-                        <p><strong>Setup:</strong> Requires Basic and Stage 1 turns.</p>
-                     </div>
-                     <div class="card-back">
-                        <img src="media/card-back.png" alt="Pokémon TCG Back" class="card-img">
-                     </div>
-                  </div>
-               </div>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rules | Pokémon TCG Hub</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/svg+xml" href="media/pokeball.svg">
+  </head>
+  <body class="home-page">
+    <header>
+      <div class="header-logo-container">
+        <img src="media/pokemon-logo.png" alt="Pokémon Hub Logo" class="header-logo">
+      </div>
+      <h1>Pokémon TCG Hub</h1>
+      <nav>
+        <ul>
+          <li>
+            <a href="index.html">Home</a>
+          </li>
+          <li>
+            <a href="lobby.html">Game Lobby</a>
+          </li>
+          <li>
+            <a href="table.html">Deck Table</a>
+          </li>
+          <li>
+            <a href="rules.html" class="active">Rules & Strategy</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="rules-content">
+        <h2>Turn Phases</h2>
+        <ol>
+          <li>
+            <strong>Draw:</strong> Pull one card from your deck at the start of your turn.
+          </li>
+          <li>
+            <strong>Attach:</strong> You may attach exactly one Energy card to one of your Pokémon.
+          </li>
+          <li>
+            <strong>Play:</strong> Put Basic Pokémon onto your Bench, play Trainer cards, or Evolve.
+          </li>
+          <li>
+            <strong>Attack:</strong> Use one attack from your Active Pokémon, then your turn ends.
+          </li>
+        </ol>
+        <hr class="divider">
+        <section class="win-conditions" style="background: #fff5f5; padding: 2rem; border-radius: 12px; border: 2px solid var(--accent-red);">
+          <h2 style="margin-top: 0;">How to Win</h2>
+          <p>In the Pokémon TCG, there are three primary ways to claim victory in the arena:</p>
+          <ul style="margin-top: 1rem; list-style-type: none; padding-left: 0;">
+            <li style="margin-bottom: 1rem;">
+              <strong style="color: var(--accent-red);">1. Take All Prize Cards:</strong> Knock out your opponent's Pokémon to collect all 6 of your Prize cards.
+            </li>
+            <li style="margin-bottom: 1rem;">
+              <strong style="color: var(--accent-red);">2. Knock Out the Active:</strong> Win if your opponent has no Pokémon left on their Bench to replace a Knocked Out Active Pokémon.
+            </li>
+            <li style="margin-bottom: 1rem;">
+              <strong style="color: var(--accent-red);">3. Deck Out:</strong> Win if your opponent has no cards left in their deck at the start of their turn.
+            </li>
+          </ul>
+        </section>
+        <hr class="divider">
+        <h2>Evolution Stat Comparison</h2>
+        <p>Compare the scaling stats between a Basic Pokémon and its Stage 2 Evolution.</p>
+        <div class="comparison-container">
+          <div class="card-container compare-size" tabindex="0">
+            <div class="card-inner">
+              <div class="card-front">
+                <h3>Basic Pokémon</h3>
+                <p>
+                  <strong>Example:</strong> Charmander
+                </p>
+                <p>
+                  <strong>HP:</strong> 50
+                </p>
+                <p>
+                  <strong>Avg Attack:</strong> 10-20 Damage
+                </p>
+                <p>
+                  <strong>Setup:</strong> Play directly to Bench.
+                </p>
+              </div>
+              <div class="card-back">
+                <img src="media/card-back.png" alt="Pokémon TCG Back" class="card-img">
+              </div>
             </div>
-         </section>
-      </main>
-      <footer>
-         <p>&copy; 2026 Pokémon TCG Hub. CSC 6370 Project 1.</p>
-      </footer>
-   </body>
+          </div>
+          <div class="card-container compare-size" tabindex="0">
+            <div class="card-inner">
+              <div class="card-front evolved-tier">
+                <h3>Stage 2 Pokémon</h3>
+                <p>
+                  <strong>Example:</strong> Charizard
+                </p>
+                <p>
+                  <strong>HP:</strong> 150+
+                </p>
+                <p>
+                  <strong>Avg Attack:</strong> 100+ Damage
+                </p>
+                <p>
+                  <strong>Setup:</strong> Requires Basic and Stage 1 turns.
+                </p>
+              </div>
+              <div class="card-back">
+                <img src="media/card-back.png" alt="Pokémon TCG Back" class="card-img">
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p>&copy; 2026 Pokémon TCG Hub. CSC 6370 Project 1.</p>
+    </footer>
+  </body>
 </html>
