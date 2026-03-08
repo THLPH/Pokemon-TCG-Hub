@@ -255,11 +255,11 @@ footer {
    background-color: var(--accent-red);
 }
 
+/* Green */
 .risk-low {
    background-color: #4caf50;
 }
 
-/* Green */
 /* Accessibility: Show focus outline when tabbing */
 .btn-toggle-label:focus-visible {
    outline: 3px solid var(--focus-outline);
@@ -490,6 +490,10 @@ footer {
 
 .card-front.evolved-tier h3 {
    color: var(--accent-red);
+}
+
+.evolved-tier ~ .card-back {
+   border-color: var(--accent-red);
 }
 
 /* 14. Accessibility Feature turns off 3D flips and slide transitions for Reduced Motion users */
