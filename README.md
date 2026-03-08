@@ -2,11 +2,13 @@
 
 Welcome to the Pokémon TCG Hub, a lightweight, responsive web application built to help players visualize their board and master the basics of the game. This project was designed to prove that you can create a tactile, interactive experience using HTML and CSS.
 
-[🏃 Jump to Run Instructions](#-how-to-run) | [⚖️ Jump to AI Disclosure](#-project-integrity--ai-disclosure)
+[🏃 Jump to Run Instructions](#-how-to-run)  ||  [⚖️ Jump to AI Disclosure](#-project-integrity--ai-disclosure)  ||  [📓 Jump to Dev Journal & Challenges](#-dev-journal)
 
 # 📝 Pages Overview
 
 🏟️ The Deck Table
+
+<img width="1831" height="1549" alt="Deck Table" src="https://github.com/user-attachments/assets/a512cc44-6e8a-4f15-9ce9-cdffb9a7a397" />
 
 The heart of the app. It uses CSS Grid to create a structured "Arena" where you can manage your Active Pokémon and your Bench.
 
@@ -16,6 +18,8 @@ The heart of the app. It uses CSS Grid to create a structured "Arena" where you 
 
 🤝 Game Lobby
 
+<img width="1638" height="938" alt="Game Lobby" src="https://github.com/user-attachments/assets/9eaef895-da1f-4523-8efb-e202e0f3ca5e" />
+
 A simulated matchmaking environment.
 
     Status Tracking: Check which rooms are open or currently in a match.
@@ -23,6 +27,8 @@ A simulated matchmaking environment.
     The "Checkbox Hack": A CSS-only interactive "Fair Play Notice." It uses a hidden checkbox and the sibling selector (~) to toggle content visibility without a single line of script.
 
 📜 Rules & Strategy
+
+<img width="1508" height="1447" alt="Rules" src="https://github.com/user-attachments/assets/37282e6d-1c99-4848-ac9a-67e528e5cec8" />
 
 A quick-reference guide for the heat of battle.
 
@@ -57,11 +63,13 @@ A quick-reference guide for the heat of battle.
 This project was developed for CSC 6370 (Spring 2026). In alignment with academic honesty and transparency, a full breakdown of AI usage for copywriting, 3D CSS logic, and boilerplate generation is documented.
 View the Full Disclosure: [⚖️ AI Disclosure](./AI_Disclosure.md)
 
+<a id="-dev-journal"></a>
 ## 📓 Development Journal & Challenges
 Building a purely HTML/CSS project without JavaScript helped us get creative, especially with the interactive elements. 
 
-* **The Checkbox Hack:** Figuring out how to toggle the Fair Play Notice in the lobby was a fun challenge. I ended up relying on a hidden checkbox and the `~` sibling selector to trigger the state change.
+* **The Checkbox Hack:** Figuring out how to toggle the Fair Play Notice in the lobby was a fun challenge. We ended up relying on a hidden checkbox and the `~` sibling selector to trigger the state change.
 * **3D Card Flips:** Getting the `backface-visibility` to play nicely across different elements took some trial and error, specifically ensuring the text didn't bleed through the back of the card during the `rotateY(180deg)` transition. 
-* **Layout Choices:** I initially tried building the entire table using Flexbox, but quickly realized CSS Grid was vastly superior for creating the rigid, defined zones for the Active and Bench areas.
+* **Layout Choices:** We initially tried building the entire table using Flexbox, but quickly realized CSS Grid was vastly superior for creating the rigid, defined zones for the Active and Bench areas.
+* **Project Management:** We learned a lot about Git and GitHub beyond just basic pushing and pulling. Solving merge conflicts when two of us were tweaking the same CSS file allowed us to get disciplined with feature branching. It turned GitHub from a simple storage site into a real coordination hub where we could review each other’s logic before merging.
 
 CSC 6370 - Project 1 (Spring 2026)
